@@ -64,8 +64,8 @@
     margin: 0 auto;
 }
 /* banner area design */
-.banner-img img{
-    max-width: 100%;
+.banner-img{
+    width: 100%;
 }
 .banner-content{
     max-width: 850px;
@@ -77,4 +77,14 @@
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 20px;
+}
+@media  screen and (max-width:576px) {
+    .nav-area, .nav-links{
+        flex-direction: column;
+       
+    }
+    .nav-links{
+        gap:10px;
+        
+    }
 }
