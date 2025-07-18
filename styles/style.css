@@ -9,7 +9,7 @@
 }
 html, body {
   overflow-x: hidden;
-  outline: 2px dashed red;
+ 
 }
 
 *{
@@ -238,15 +238,14 @@ html, body {
     font-size: 1.25rem;
     width: 100%;
 }
+.style:hover{
+    transform: scale(1.25);
+}
 
 
 /* media query responsive */
 @media screen and (max-width: 576px) {
-  /* Global adjustments */
-  body {
-    margin: 0;
-    padding: 0;
-  }
+
 
   .main,
   .nav-area,
@@ -260,9 +259,16 @@ html, body {
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
     box-sizing: border-box;
+  }
+  .nav-link{
+    font-size: 1.5rem;
+  }
+  .nav-title{
+    font-size: 3.5rem;
+  }
+  #hader-btn{
+    margin-bottom: 20px;
   }
 
   /* Navigation adjustments */
@@ -276,7 +282,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-left: -45px;
+    margin-left: -60px;
   }
 
   .nav-title {
@@ -331,18 +337,21 @@ html, body {
     row-gap: 20px;
     margin: 0 auto;
     padding: 0;
+    margin-top: 30px;
   }
 
   .card {
     width: 100%;
     height: auto;
+    
   }
 
   /* Sponsors */
   .sponsors-img {
     grid-template-columns: 1fr;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: 120px;
   }
 
   /* Footer */
@@ -369,15 +378,19 @@ html, body {
         max-width: 100%;
        
     }
+    .attribute-part{
+        margin-left: 80px;
+    }
       .cards{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 20px;
-        margin-left: 10px;
+        margin-left: 50px;
         
     }
      .sponsors-img{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 10px;
+        margin-left: 150px;
     }
     .footer-area{
         padding:20px 100px;
