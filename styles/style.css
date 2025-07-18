@@ -7,7 +7,10 @@
   font-weight:400;
   font-style: normal;
 }
-
+html, body {
+  overflow-x: hidden;
+  outline: 2px dashed red;
+}
 
 *{
     box-sizing: border-box;
