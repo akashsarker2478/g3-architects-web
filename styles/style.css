@@ -276,6 +276,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-left: -45px;
   }
 
   .nav-title {
